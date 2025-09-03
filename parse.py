@@ -1,12 +1,10 @@
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import ChatPromptTemplate
-from dotenv import load_dotenv
 import os
+import streamlit as st
 
-# Load env vars
-load_dotenv()
+api_key = st.secrets["GOOGLE_API_KEY"]
 
-api_key = os.getenv("GOOGLE_API_KEY")
 
 if not api_key:
     raise ValueError("❌ GOOGLE_API_KEY not found. Please set it in your .env or environment variables.")
