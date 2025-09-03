@@ -98,11 +98,18 @@ streamlit run main.py
 
 ---
 
+<<<<<<< HEAD
 ## 🎥 Demo Video
 
 [![Watch the demo](https://img.youtube.com/vi/AU1AczEB4ds/0.jpg)](https://youtu.be/AU1AczEB4ds?si=8J_zgoqp2uoyt41-)
 
 *(Click the thumbnail above to watch the full demo on YouTube)*
+=======
+## 🖼️ Demo Screenshot (Example)
+
+![Demo Screenshot](https://via.placeholder.com/900x400.png?text=AI+Web+Scraper+Demo)
+*(Replace with actual screenshot from your app)*
+>>>>>>> 461a424a5ee8ab9311021adb63a0ac71615ed52d
 
 ---
 
@@ -133,5 +140,10 @@ Feel free to fork, use, and improve it. 🚀
 
 Developed with ❤️ by [**Tamal Majumdar**](https://github.com/Tom-1508)
 Inspired by **modern AI-driven web scraping techniques**.
+<<<<<<< HEAD
+=======
 
 ---
+>>>>>>> 461a424a5ee8ab9311021adb63a0ac71615ed52d
+
+Would you like me to also prepare a **`requirements.txt`** for you (with all the exact dependencies) so that others can just `pip install -r requirements.txt` and run your project instantly?
