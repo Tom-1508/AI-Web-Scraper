@@ -104,12 +104,6 @@ streamlit run main.py
 [![Watch the demo](https://img.youtube.com/vi/AU1AczEB4ds/0.jpg)](https://youtu.be/AU1AczEB4ds?si=8J_zgoqp2uoyt41-)
 
 *(Click the thumbnail above to watch the full demo on YouTube)*
-=======
-## 🖼️ Demo Screenshot (Example)
-
-![Demo Screenshot](https://via.placeholder.com/900x400.png?text=AI+Web+Scraper+Demo)
-*(Replace with actual screenshot from your app)*
->>>>>>> 461a424a5ee8ab9311021adb63a0ac71615ed52d
 
 ---
 
