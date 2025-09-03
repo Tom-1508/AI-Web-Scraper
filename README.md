@@ -1,62 +1,64 @@
-```markdown
 # 🕸️ AI Web Scraper with Gemini & Streamlit
 
-This project is an **AI-powered web scraper** that extracts and parses website content using:
-- **Selenium + BeautifulSoup** for scraping
-- **Google Gemini Flash (via LangChain)** for intelligent parsing
-- **Streamlit** for an interactive UI
+An **AI-powered web scraper** that can **extract, clean, and parse website content** intelligently using Google **Gemini 1.5 Flash** 🚀.
+It combines **Selenium + BeautifulSoup** for scraping, **LangChain + Gemini** for parsing, and a **Streamlit UI** for an interactive experience.
 
-It allows you to:
-1. Enter any website URL and scrape its content.
-2. View the extracted & cleaned DOM body.
-3. Describe what you want to parse, and let Gemini return only the requested information.
+---
+
+## ✨ What It Can Do
+
+1. 🔗 Enter any website URL → Scrape its content
+2. 🧹 Extract and clean **readable DOM body**
+3. 🤖 Describe what you want → Gemini returns **only the requested info**
 
 ---
 
 ## 🚀 Features
-- ✅ Headless web scraping with **Selenium + SuperProxy**
-- ✅ CAPTCHA handling with **Chromium CDP**
-- ✅ Content cleaning (removes scripts/styles, keeps readable text)
-- ✅ DOM chunking to handle large pages
-- ✅ AI parsing with **Gemini 1.5 Flash** (fast & cost-efficient)
-- ✅ Interactive interface with **Streamlit**
+
+* ✅ **Headless Web Scraping** with Selenium + SuperProxy
+* ✅ **Auto CAPTCHA Handling** via Chromium CDP
+* ✅ **Content Cleaning** → removes scripts, ads, and clutter
+* ✅ **DOM Chunking** → handles even large pages
+* ✅ **AI-Powered Parsing** with Gemini 1.5 Flash (fast & cost-efficient)
+* ✅ **Interactive UI** built in Streamlit
 
 ---
 
 ## 🛠️ Tech Stack
-- **Python 3.9+**
-- [Streamlit](https://streamlit.io/)
-- [Selenium](https://www.selenium.dev/)
-- [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/)
-- [LangChain](https://www.langchain.com/)
-- [Google Gemini API](https://ai.google.dev/)
+
+| Component       | Technology Used                                                                                         |
+| --------------- | ------------------------------------------------------------------------------------------------------- |
+| **Frontend UI** | [Streamlit](https://streamlit.io/)                                                                      |
+| **Scraping**    | [Selenium](https://www.selenium.dev/), [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/) |
+| **AI Parsing**  | [LangChain](https://www.langchain.com/), [Google Gemini API](https://ai.google.dev/)                    |
+| **Language**    | Python 3.9+                                                                                             |
 
 ---
 
 ## 📂 Project Structure
+
 ```
-
 📦 AI-Web-Scraper
-┣ 📜 main.py            # Streamlit UI
-┣ 📜 scrape.py          # Scraping logic
-┣ 📜 parse.py           # AI parsing with Gemini
-┣ 📜 requirements.txt   # Dependencies
-┣ 📜 .env               # API key & secrets (not tracked in git)
-┗ 📂 **pycache**/       # Python cache (ignored)
-
-````
+ ┣ 📜 main.py            # Streamlit app (UI)
+ ┣ 📜 scrape.py          # Web scraping logic
+ ┣ 📜 parse.py           # AI parsing with Gemini
+ ┣ 📜 requirements.txt   # Dependencies
+ ┣ 📜 .env               # API key & secrets (excluded from git)
+ ┗ 📂 __pycache__/       # Python cache (ignored)
+```
 
 ---
 
-## ⚡ Setup & Installation
+## ⚡ Installation & Setup
 
-### 1. Clone the repository
+### 1️⃣ Clone the repository
+
 ```bash
 git clone https://github.com/Tom-1508/AI-Web-Scraper.git
 cd AI-Web-Scraper
-````
+```
 
-### 2. Create a virtual environment
+### 2️⃣ Create a virtual environment
 
 ```bash
 python -m venv venv
@@ -64,21 +66,21 @@ source venv/bin/activate   # On Linux/Mac
 venv\Scripts\activate      # On Windows
 ```
 
-### 3. Install dependencies
+### 3️⃣ Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Add your Google API Key
+### 4️⃣ Add your API Key
 
-Create a `.env` file in the project root:
+Create a `.env` file in the root directory:
 
 ```
 GOOGLE_API_KEY=your_api_key_here
 ```
 
-### 5. Run the Streamlit app
+### 5️⃣ Run the app
 
 ```bash
 streamlit run main.py
@@ -86,43 +88,51 @@ streamlit run main.py
 
 ---
 
-## 💡 Usage
+## 🎮 Usage Guide
 
 1. Launch the Streamlit app.
-2. Enter a website URL and click **"Scrape Site"**.
-3. View the extracted DOM content.
-4. Enter a natural language query (e.g., *"Extract all prices from the page"*).
-5. Click **"Parse Content"** → Gemini will return only the requested data.
+2. Enter a website URL → click **"Scrape Site"**.
+3. Expand the **DOM Viewer** to see extracted HTML content.
+4. Enter your query (e.g., *"Extract all product prices"*).
+5. Click **"Parse Content"** → AI will return clean, structured data.
+
+---
+
+## 🖼️ Demo Screenshot (Example)
+
+![Demo Screenshot](https://via.placeholder.com/900x400.png?text=AI+Web+Scraper+Demo)
+*(Replace with actual screenshot from your app)*
 
 ---
 
 ## 📝 Example Use Cases
 
-* Extract product prices from e-commerce sites.
-* Get article text without ads/scripts.
-* Collect structured data from messy HTML.
+* 🛒 Extract product prices & details from e-commerce sites
+* 📰 Scrape news articles without ads/scripts
+* 📊 Collect structured data from messy HTML content
+* 📚 Extract key insights for research or analysis
 
 ---
 
-## 🔒 Security Note
+## 🔒 Security Notes
 
-* Your `.env` file containing the **Google API Key** is excluded from Git (`.gitignore`).
-* Do **not** commit `.env` or sensitive credentials.
+* `.env` file (with API key) is ignored via `.gitignore`.
+* **Never** commit your API keys or credentials.
 
 ---
 
 ## 📜 License
 
 This project is licensed under the **MIT License**.
-Feel free to use and modify it for your own projects.
+Feel free to fork, use, and improve it. 🚀
 
 ---
 
-## ✨ Author
+## 👨‍💻 Author
 
-👨‍💻 Developed by [**Tamal Majumdar**](https://github.com/Tom-1508)
-💡 Inspired by modern AI-driven web scraping techniques.
-
-```
+Developed with ❤️ by [**Tamal Majumdar**](https://github.com/Tom-1508)
+Inspired by **modern AI-driven web scraping techniques**.
 
 ---
+
+Would you like me to also prepare a **`requirements.txt`** for you (with all the exact dependencies) so that others can just `pip install -r requirements.txt` and run your project instantly?
