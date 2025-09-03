@@ -1,55 +1,47 @@
 # 🕸️ AI Web Scraper with Gemini & Streamlit
 
-An **AI-powered web scraper** that can **extract, clean, and parse website content** intelligently using Google **Gemini 1.5 Flash** 🚀.
-It combines **Selenium + BeautifulSoup** for scraping, **LangChain + Gemini** for parsing, and a **Streamlit UI** for an interactive experience.
+An **AI-powered web scraper** that can **extract, clean, and parse website content intelligently** using **Google Gemini 1.5 Flash** 🚀.  
+Built with **Selenium + BeautifulSoup** for scraping, **LangChain + Gemini** for parsing, and a **Streamlit UI** for interactivity.  
 
 ---
 
-## ✨ What It Can Do
+## ✨ Key Features
 
-1. 🔗 Enter any website URL → Scrape its content
-2. 🧹 Extract and clean **readable DOM body**
-3. 🤖 Describe what you want → Gemini returns **only the requested info**
-
----
-
-## 🚀 Features
-
-* ✅ **Headless Web Scraping** with Selenium + SuperProxy
-* ✅ **Auto CAPTCHA Handling** via Chromium CDP
-* ✅ **Content Cleaning** → removes scripts, ads, and clutter
-* ✅ **DOM Chunking** → handles even large pages
-* ✅ **AI-Powered Parsing** with Gemini 1.5 Flash (fast & cost-efficient)
-* ✅ **Interactive UI** built in Streamlit
+- ✅ **Headless Web Scraping** using Selenium + SuperProxy  
+- ✅ **Smart CAPTCHA Handling** via Chromium CDP  
+- ✅ **Content Cleaning** → removes ads, scripts, and clutter  
+- ✅ **DOM Chunking** for large web pages  
+- ✅ **AI-Powered Parsing** with Gemini 1.5 Flash (fast & cost-efficient)  
+- ✅ **Interactive Streamlit UI** for real-time usage  
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Component       | Technology Used                                                                                         |
-| --------------- | ------------------------------------------------------------------------------------------------------- |
-| **Frontend UI** | [Streamlit](https://streamlit.io/)                                                                      |
-| **Scraping**    | [Selenium](https://www.selenium.dev/), [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/) |
-| **AI Parsing**  | [LangChain](https://www.langchain.com/), [Google Gemini API](https://ai.google.dev/)                    |
-| **Language**    | Python 3.9+                                                                                             |
+| Layer             | Technology                                                                 |
+| ----------------- | --------------------------------------------------------------------------- |
+| **Frontend UI**   | [Streamlit](https://streamlit.io/)                                          |
+| **Web Scraping**  | [Selenium](https://www.selenium.dev/), [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/) |
+| **AI Parsing**    | [LangChain](https://www.langchain.com/), [Google Gemini API](https://ai.google.dev/) |
+| **Language**      | Python 3.9+                                                                 |
 
 ---
 
 ## 📂 Project Structure
 
-```
+```bash
 📦 AI-Web-Scraper
  ┣ 📜 main.py            # Streamlit app (UI)
  ┣ 📜 scrape.py          # Web scraping logic
  ┣ 📜 parse.py           # AI parsing with Gemini
  ┣ 📜 requirements.txt   # Dependencies
- ┣ 📜 .env               # API key & secrets (excluded from git)
+ ┣ 📜 .env               # API keys & secrets (excluded from Git)
  ┗ 📂 __pycache__/       # Python cache (ignored)
-```
+````
 
 ---
 
-## ⚡ Installation & Setup
+## ⚡ Getting Started
 
 ### 1️⃣ Clone the repository
 
@@ -62,8 +54,8 @@ cd AI-Web-Scraper
 
 ```bash
 python -m venv venv
-source venv/bin/activate   # On Linux/Mac
-venv\Scripts\activate      # On Windows
+source venv/bin/activate   # Linux/Mac
+venv\Scripts\activate      # Windows
 ```
 
 ### 3️⃣ Install dependencies
@@ -74,13 +66,13 @@ pip install -r requirements.txt
 
 ### 4️⃣ Add your API Key
 
-Create a `.env` file in the root directory:
+Create a `.env` file in the project root:
 
-```
+```ini
 GOOGLE_API_KEY=your_api_key_here
 ```
 
-### 5️⃣ Run the app
+### 5️⃣ Run the Streamlit app
 
 ```bash
 streamlit run main.py
@@ -88,52 +80,48 @@ streamlit run main.py
 
 ---
 
-## 🎮 Usage Guide
+## 🎮 How to Use
 
 1. Launch the Streamlit app.
-2. Enter a website URL → click **"Scrape Site"**.
-3. Expand the **DOM Viewer** to see extracted HTML content.
-4. Enter your query (e.g., *"Extract all product prices"*).
-5. Click **"Parse Content"** → AI will return clean, structured data.
+2. Enter a website URL → click **Scrape Site**.
+3. Inspect extracted DOM in the **Viewer Panel**.
+4. Type a query (e.g., *"Extract all product prices"*).
+5. Click **Parse Content** → AI delivers clean, structured results.
 
 ---
 
-<<<<<<< HEAD
 ## 🎥 Demo Video
 
 [![Watch the demo](https://img.youtube.com/vi/AU1AczEB4ds/0.jpg)](https://youtu.be/AU1AczEB4ds?si=8J_zgoqp2uoyt41-)
 
-*(Click the thumbnail above to watch the full demo on YouTube)*
+*(Click the thumbnail to watch on YouTube)*
 
 ---
 
 ## 📝 Example Use Cases
 
-* 🛒 Extract product prices & details from e-commerce sites
-* 📰 Scrape news articles without ads/scripts
-* 📊 Collect structured data from messy HTML content
-* 📚 Extract key insights for research or analysis
+* 🛒 Extract product data from e-commerce websites
+* 📰 Collect clean news articles without ads
+* 📊 Convert messy HTML into structured datasets
+* 📚 Summarize or extract insights for research
 
 ---
 
 ## 🔒 Security Notes
 
-* `.env` file (with API key) is ignored via `.gitignore`.
-* **Never** commit your API keys or credentials.
+* The `.env` file (with API keys) is **gitignored**.
+* Never expose API keys in commits or public repos.
 
 ---
 
 ## 📜 License
 
-This project is licensed under the **MIT License**.
-Feel free to fork, use, and improve it. 🚀
+Licensed under the **MIT License**.
+You are free to use, modify, and distribute this project. 🚀
 
 ---
 
 ## 👨‍💻 Author
 
 Developed with ❤️ by [**Tamal Majumdar**](https://github.com/Tom-1508)
-Inspired by **modern AI-driven web scraping techniques**
-=======
-
----
+Inspired by modern **AI-driven web scraping techniques** 🌐🤖
