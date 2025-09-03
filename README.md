@@ -133,11 +133,7 @@ Feel free to fork, use, and improve it. 🚀
 ## 👨‍💻 Author
 
 Developed with ❤️ by [**Tamal Majumdar**](https://github.com/Tom-1508)
-Inspired by **modern AI-driven web scraping techniques**.
-<<<<<<< HEAD
+Inspired by **modern AI-driven web scraping techniques**
 =======
 
 ---
->>>>>>> 461a424a5ee8ab9311021adb63a0ac71615ed52d
-
-Would you like me to also prepare a **`requirements.txt`** for you (with all the exact dependencies) so that others can just `pip install -r requirements.txt` and run your project instantly?
